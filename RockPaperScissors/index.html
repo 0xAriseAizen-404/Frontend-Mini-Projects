@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-container">
+            <h2>GAME</h2>
+            <span>Your Choice Goes to ... </span>
+            <button class="btn btn-md btn-primary btn-rock">Rock</button>
+            <button class="btn btn-md btn-secondary btn-paper">Paper</button>
+            <button class="btn btn-md btn-success btn-scissor">Scissor</button>
+        </div>
+        <button class="btn btn-md btn-reset-game">Reset the Game</button>
+        <button class="btn btn-md btn-score-board">Show Score Board</button>
+        <button class="btn btn-md btn-quit-game">Quit the Game</button>
+    </div>
+    
+    <div class="score-container-popup">
+        <div class="score-container">
+            <div class="control-items">
+                <span>Score Board</span>
+                <span class="close-btn">&times</span>
+            </div>
+            <div class="card-items">
+                <div class="card system-card">
+                    <h3>System</h3>
+                    <div class="item">
+                        <span>Wins - </span>
+                        <span class="system-win">0</span>
+                    </div>
+                    <div class="item">
+                        <span>Loses - </span>
+                        <span class="system-lose">0</span>
+                    </div>
+                    <div class="item">
+                        <span>Ties - </span>
+                        <span class="system-tie">0</span>
+                    </div>
+                </div>
+                <div class="card user-card">
+                    <h3>User</h3>
+                    <div class="item">
+                        <span>Wins - </span>
+                        <span class="user-win">0</span>
+                    </div>
+                    <div class="item">
+                        <span>Loses - </span>
+                        <span class="user-lose">0</span>
+                    </div>
+                    <div class="item">
+                        <span>Ties - </span>
+                        <span class="user-tie">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quit-container-popup">
+        <div class="quit-container">
+            <div class="control-items">
+                <span>Winner Board</span>
+                <span class="quit-close-btn close-btn">&times</span>
+            </div>
+            <h2>Winner is</h2>
+            <span class="winner-name"></span>
+        </div>
+    </div>
+    <div class="each-game-popup">
+        <div class="each-game-container">
+            <div class="control-items">
+                <span>Status</span>
+                <span class="close-btn">&times</span>
+            </div>
+            <h2>It's a <span class="game-win-name"></span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
