@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --whiteColor: #fff;
+  --primaryColor: #ff1b6b;
+  --secondaryColor: #45caff;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    to right,
+    var(--primaryColor),
+    var(--secondaryColor)
+  );
+}
+.wrapper {
+  width: 340px;
+  height: 32rem;
+  position: relative;
+  & .form-container {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    & h2 {
+      margin: 0.75rem 0;
+    }
+    & form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      & .btns-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        border-radius: 0.25rem;
+        margin-bottom: 1rem;
+        & .btn {
+          cursor: pointer;
+          width: 50%;
+          padding: 0.5rem 1rem;
+          background-color: transparent;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          border-radius: 0.25rem;
+          &.active {
+            color: var(--whiteColor);
+            background-image: linear-gradient(
+              to right,
+              var(--primaryColor),
+              var(--secondaryColor)
+            );
+          }
+          &:not(.active) {
+            border: 2px solid #eee;
+            border-left: none;
+          }
+        }
+      }
+      .form-group-ele {
+        width: 100%;
+        position: relative;
+        & .label-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          color: #999;
+          position: absolute;
+          top: 0.9rem;
+          padding: 0 5px;
+          left: 1rem;
+          cursor: text;
+          transition: 0.3s;
+          & label,
+          & i {
+            cursor: text;
+          }
+        }
+        & input {
+          font-size: 16px;
+          width: 100%;
+          padding: 0.75rem 1rem;
+          outline: none;
+          border: 2px solid #eee;
+          &:focus {
+            outline: 2px solid #eee;
+          }
+          &:valid,
+          &:focus {
+            & + .label-container {
+              font-size: 85%;
+              color: #333;
+              top: -0.3rem;
+              background-color: var(--whiteColor);
+            }
+          }
+        }
+        & .forgot-pass {
+          color: var(--primaryColor);
+          text-decoration: none;
+          margin-top: 0.5rem;
+          /* margin-left: .5rem; */
+          display: block;
+          font-size: 0.9rem;
+        }
+      }
+      & > .form-group-ele .btn {
+        background-image: linear-gradient(
+          to right,
+          var(--primaryColor),
+          var(--secondaryColor)
+        );
+        margin: 0.75rem 0 1rem;
+        color: var(--whiteColor);
+        padding: 0.75rem 1rem;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        border-radius: 0.5rem;
+        font-size: 18px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    & .footer span {
+      color: var(--primaryColor);
+      cursor: pointer;
+    }
+  }
+  & .form-container.sign-up {
+    & h2 {
+      margin: 0;
+    }
+    & form {
+      gap: 0.75rem;
+      .btns-container {
+        margin-bottom: 0.75rem;
+        .btn:not(.active) {
+          border: 2px solid #eee;
+          border-right: none;
+        }
+      }
+      & .form-group-ele .btn {
+        margin: 0.5rem 0 0.25rem;
+      }
+    }
+  }
+}
+.wrapper .form-container.sign-up {
+  transform: rotate(7deg);
+}
+
+.wrapper.animated-signin .form-container.sign-in {
+  animation: signin-flip 0.6s ease-in-out forwards;
+}
+@keyframes signin-flip {
+  0% {
+    transform: translateX(0);
+    z-index: 1;
+  }
+  50% {
+    transform: translateX(-25rem) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) rotate(7deg) scale(1);
+    z-index: -1;
+  }
+}
+.wrapper.animated-signin .form-container.sign-up {
+  animation: rotatecard 0.3s ease-in-out forwards;
+}
+.wrapper.animated-signup .form-container.sign-up {
+  animation: signup-flip 0.6s ease-in-out forwards;
+}
+@keyframes signup-flip {
+  0% {
+    transform: translateX(0);
+    z-index: 1;
+  }
+  50% {
+    transform: translateX(25rem) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) rotate(7deg) scale(1);
+    z-index: -1;
+  }
+}
+.wrapper.animated-signup .form-container.sign-in {
+  animation: rotatecard 0.3s ease-in-out forwards;
+}
+@keyframes rotatecard {
+  0% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    z-index: 1;
+  }
+}
