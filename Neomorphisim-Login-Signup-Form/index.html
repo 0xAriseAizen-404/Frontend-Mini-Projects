@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="form signup">
+            <h1>Sign Up</h1>
+            <div class="input-ele">
+                <input type="text" name="username" id="" required>
+                <span>username</span>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-ele">
+                <input type="email" name="email" id="" required>
+                <span>email address</span>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-ele">
+                <input type="password" name="password" id="" required>
+                <span>create password</span>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input-ele">
+                <input type="password" name="conpassword" id="" required>
+                <span>confirm password</span>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input-ele">
+                <input type="submit" value="Create Account">
+            </div>
+            <p>
+                Already a member ?
+                <a href="#" class="login-btn">Login</a>
+            </p>
+        </div>
+
+
+        <div class="form login">
+            <h1>LogIn</h1>
+            <div class="input-ele">
+                <input type="text" name="username" id="" required>
+                <span>username</span>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-ele">
+                <input type="password" name="password" id="" required>
+                <span>password</span>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input-ele">
+                <input type="submit" value="Login">
+            </div>
+            <p>
+                Not a member ?
+                <a href="#" class="create-btn">Create an account</a>
+            </p>
+        </div>
+    </div>
+    <script>
+        const container = document.querySelector('.container');
+        const login = document.querySelector('.login-btn');
+        const create = document.querySelector('.create-btn');
+        login.onclick = () => {
+            container.classList.remove('signup');
+        }
+        create.onclick = () => {
+            container.classList.add('signup');
+        }
+    </script>
+</body>
+
+</html>
