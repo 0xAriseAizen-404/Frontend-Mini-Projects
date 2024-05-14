@@ -8,7 +8,7 @@
 | Currency_Convertor                | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/Currency_Convertor/) |
 | Jarvis Public School              | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/Jarvis%20Public%20School/) |
 | MyBookList                        | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/MyBookList/) |
-| Neomorphisim-Login-Signup-Form   | [Live Demo](#neomorphisim-login-signup-form-demo) |
+| Neomorphisim-Login-Signup-Form   | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/Neomorphisim-Login-Signup-Form/) |
 | RockPaperScissors                 | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/RockPaperScissors/) |
 | TextToEmoji                       | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/TextToEmoji/) |
 | TraversyMediaBootstrapSite        | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/TraversyMediaBootstrapSite/) |
