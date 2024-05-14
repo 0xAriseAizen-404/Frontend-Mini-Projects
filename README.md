@@ -2,17 +2,17 @@
 
 | Project Name                       | Live Demo |
 |-----------------------------------|-----------|
-| Animated-SignIn-SignUp            | [Live Demo](#animated-signin-signup-demo)          |
-| BoxShadowGenerator                | [Live Demo](#boxshadowgenerator-demo)             |
-| Calculator                        | [Live Demo](#calculator-demo) |
-| Currency_Convertor                | [Live Demo](#currency-convertor-demo) |
-| Jarvis Public School              | [Live Demo](#jarvis-public-school-demo) |
-| MyBookList                        | [Live Demo](#mybooklist-demo) |
+| Animated-SignIn-SignUp            | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/Animated-SignIn-SignUp/)          |
+| BoxShadowGenerator                | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/BoxShadowGenerator/)             |
+| Calculator                        | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/Calculator/) |
+| Currency_Convertor                | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/Currency_Convertor/) |
+| Jarvis Public School              | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/Jarvis%20Public%20School/) |
+| MyBookList                        | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/MyBookList/) |
 | Neomorphisim-Login-Signup-Form   | [Live Demo](#neomorphisim-login-signup-form-demo) |
-| RockPaperScissors                 | [Live Demo](#rockpaperscissors-demo) |
-| TextToEmoji                       | [Live Demo](#texttoemoji-demo) |
-| TraversyMediaBootstrapSite        | [Live Demo](#traversymediabootstrapsite-demo) |
-| Weather-Web-App                   | [Live Demo](#weather-web-app-demo) |
+| RockPaperScissors                 | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/RockPaperScissors/) |
+| TextToEmoji                       | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/TextToEmoji/) |
+| TraversyMediaBootstrapSite        | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/TraversyMediaBootstrapSite/) |
+| Weather-Web-App                   | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mini-Projects/Weather-Web-App/) |
 
 Copyright © [2024] [arise-aizen](https://github.com/arise-aizen-404).
 
